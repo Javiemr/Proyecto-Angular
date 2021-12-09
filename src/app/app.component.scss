@@ -1,0 +1,33 @@
+.hero {
+    background-color: rgb(23, 173, 179);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#con1 {   
+    
+    background-color: green;
+}
+#con2 {
+       
+    background-color: green;
+}
+#con3 {
+  
+    background-color: green;
+}
+#con1 span {   
+    padding: 2rem;
+    
+}
+#con2 span {
+       padding: 2rem;
+    
+}
+#con3 span {
+     padding: 2rem;
+   
+}
