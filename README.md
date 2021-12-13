@@ -1,3 +1,5 @@
+Vídeo explicativo sobre el proyecto https://youtu.be/BKgHypV0zq0
+
 <h1>Información sobre el proyecto</h1>
 
 Nature es una aplicación que permite realizar actividades al aire libre, donde habrá usuarios registrados que puedan pertenecer a grupos y también habrá coordinadores que coordinen actividades, esta aplicación servirá para gestionar principalmente los usuarios y los coordinadores
