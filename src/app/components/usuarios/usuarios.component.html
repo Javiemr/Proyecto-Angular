@@ -1,3 +1,6 @@
+<div class="tablausu">
+    <p-messages [value]="msj"></p-messages>
+
 <p-table [value]="usuarios" [paginator]="true" [rows]="10" [showCurrentPageReport]="true" responsiveLayout="scroll"
 currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" >
     <ng-template pTemplate="header">
@@ -24,9 +27,15 @@ currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
                 <i class="pi pi-times" *ngIf="!usuario.estaengrupo"></i>
             </td>
             <td><i class="pi pi-check" *ngIf="usuario.coordinador"></i>
-                <i class="pi pi-times" *ngIf="!usuario.coordinador"></i>
-            </td>
-            
+                <i class="pi pi-times" *ngIf="!usuario.coordinador"></i> </td>
         </tr>
     </ng-template>
 </p-table>
+<p-dialog header="{{userSelected.nombre}} {{userSelected.apellido}}" [(visible)]="display">
+    {{userSelected.nombre}} {{userSelected.apellido}} has visited <b>{{userSelected.direccion}}</b> centers and has <b>{{userSelected.correo}}</b> reviews.
+    <br>
+    <br>
+    <div class="dialog-container"><b>Do you want to delete this user?</b> <button pButton type="button" icon="pi pi-trash" class="p-button-text p-button-danger" (click)="confirm(userSelected)"></button></div>
+</p-dialog>
+
+</div>

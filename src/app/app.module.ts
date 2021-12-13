@@ -7,6 +7,15 @@ import { AppComponent } from './app.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { GruposComponent } from './components/grupos/grupos.component';
 import { ActividadesComponent } from './components/actividades/actividades.component';
+import {ConfirmationPopoverModule} from 'angular-confirmation-popover';
+import {DialogModule} from 'primeng/dialog';
+import { MessagesModule } from 'primeng/messages';
+import {ToastModule} from 'primeng/toast';
+import {TabViewModule} from 'primeng/tabview';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -19,7 +28,14 @@ import { ActividadesComponent } from './components/actividades/actividades.compo
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    ConfirmationPopoverModule,
+    DialogModule,
+    MessagesModule,
+    ToastModule,
+    TabViewModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
