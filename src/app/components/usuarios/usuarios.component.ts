@@ -25,16 +25,17 @@ export class UsuariosComponent implements OnInit {
   }
 
    confirm(usuario: Usuario) {
+     this.display = false
     this.confirmationService.confirm({
-        message: 'Are you sure that you want to delete this usuario?',
+        message: 'Seguro que quieres eliminar a este usuario?',
         accept: () => {
-          this.msj = [{severity:'error', summary:'Deleted', detail:'You have deleted the usuario'}];
+          this.msj = [{severity:'error', summary:'Eliminado', detail:'Has eliminado a este usuario'}];
           this.delete(usuario);
-          this.display = false;
+          
       },
         reject: () => {
-            this.msj = [{severity:'warn', summary:'Rejected', detail:'You have rejected'}];
-            this.display = false;
+            this.msj = [{severity:'warn', summary:'Cancelado', detail:'No se ha eliminado este usuario'}];
+           
       }
     });
   }

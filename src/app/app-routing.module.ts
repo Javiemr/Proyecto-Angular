@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ActividadesComponent } from './components/actividades/actividades.component';
 import { GruposComponent } from './components/grupos/grupos.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { IndexComponent } from './index/index.component';
 
 const routes: Routes = [
+    {path:'index', component: IndexComponent},
     {path:'usuarios', component: UsuariosComponent},
     {path:'grupos', component: GruposComponent},
-    {path:'actividades', component: ActividadesComponent}
+    { path: '',   redirectTo: '/index', pathMatch: 'full' }
 
 ];
 

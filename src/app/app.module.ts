@@ -6,12 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { GruposComponent } from './components/grupos/grupos.component';
-import { ActividadesComponent } from './components/actividades/actividades.component';
 import {ConfirmationPopoverModule} from 'angular-confirmation-popover';
 import {DialogModule} from 'primeng/dialog';
 import { MessagesModule } from 'primeng/messages';
 import {ToastModule} from 'primeng/toast';
 import {TabViewModule} from 'primeng/tabview';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {CardModule} from 'primeng/card';
+import {InputTextModule} from 'primeng/inputtext';
+import {PickListModule} from 'primeng/picklist';
+import { IndexComponent } from './index/index.component';
+import {MessageModule} from 'primeng/message';
+
 
 
 
@@ -22,7 +29,7 @@ import {TabViewModule} from 'primeng/tabview';
     AppComponent,
     UsuariosComponent,
     GruposComponent,
-    ActividadesComponent
+    IndexComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +41,12 @@ import {TabViewModule} from 'primeng/tabview';
     MessagesModule,
     ToastModule,
     TabViewModule,
+    BrowserAnimationsModule,
+    ConfirmDialogModule,
+    CardModule,
+    InputTextModule,
+    PickListModule,
+    MessageModule
     
     
   ],

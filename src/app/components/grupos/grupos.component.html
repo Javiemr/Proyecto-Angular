@@ -1,1 +1,28 @@
-<p>grupos works!</p>
+
+<p-pickList [source]="usuario" [target]="coordinador" sourceHeader="Usuario" targetHeader="coordinador" [dragdrop]="true"
+    [responsive]="true" [sourceStyle]="{'height':'30rem'}" [targetStyle]="{'height':'30rem'}" filterBy="nombre"
+    sourceFilterPlaceholder="Search by nombre" targetFilterPlaceholder="Search by nombre" >
+    <ng-template let-usuario pTemplate="item">
+        <div class="usuario-item item-box">
+            <div class="image-container">
+                <img src="../../../assets/images/user.png" [alt]="usuario" class="product-image" width=80 />
+            </div>
+            <div class="marginclass">
+                <div class="usuario-list-detail">
+                    <h5 class="p-mb-2">{{usuario.id}}</h5>
+                    <i class="pi pi-user"></i>
+                    <span class="usuario-category">&nbsp;{{usuario.nombre}}</span>
+                </div>
+                <div class="usuario-list-action">
+                    <h6 class="pi pi-envelope">&nbsp;{{usuario.correo}}</h6>
+               
+                </div>
+            </div>
+           
+        </div>
+    </ng-template>
+</p-pickList>
+<div style="width: 100%; display: flex; justify-content: center; align-items: center; padding: 30px;">
+    <button pButton pRipple type="button" label="Introducir datos" class="p-button-rounded p-button-success" (click)="changeToCoord();changeToUser()"></button>
+    </div>
+    <p-toast></p-toast>    
