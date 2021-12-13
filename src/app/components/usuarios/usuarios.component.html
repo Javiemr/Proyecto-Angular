@@ -16,7 +16,7 @@ currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-usuario>
-        <tr>
+        <tr id="table-cursor" (click)="showDialog(usuario)">
             <td>{{usuario.id}}</td>
             <td>{{usuario.nombre}}</td>
             <td>{{usuario.apellido}}</td>
