@@ -1,30 +1,33 @@
-# Proyecto1
+Vídeo explicativo sobre el proyecto https://youtu.be/BKgHypV0zq0
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+<h1>Información sobre el proyecto</h1>
 
-## Development server
+Nature es una aplicación que permite realizar actividades al aire libre, donde habrá usuarios registrados que puedan pertenecer a grupos y también habrá coordinadores que coordinen actividades, esta aplicación servirá para gestionar principalmente los usuarios y los coordinadores
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<h1>Estructura del proyecto</h1>
 
-## Code scaffolding
+Nature es una aplicación construida gracias a primeng en angular y utiliza componentes de ambos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h1>Imágenes de la página</h1>
 
-## Build
+El index se verá así ![image](https://cdn.discordapp.com/attachments/393868752086761475/920066436670558208/img1.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+El componente de usuario permitirá ver a todos los usuarios y eliminarlos
 
-## Running unit tests
+![image](https://user-images.githubusercontent.com/72435195/145893084-8c019321-fb24-44b8-800c-1bf11301b193.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![image](https://user-images.githubusercontent.com/72435195/145893190-7f9f77e9-de43-4e0e-9c66-883e8d9470f5.png)
 
-## Running end-to-end tests
+![image](https://user-images.githubusercontent.com/72435195/145893256-0f015877-ab79-489f-b0ee-f0e87edd88aa.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![image](https://user-images.githubusercontent.com/72435195/145893298-b75eb19c-b628-4527-8498-8f55840bc3bf.png)
 
-## Further help
+Podremos gestionar los coordinadores eligiendo de manera visual y amigable aquellos usuarios que querremos que sean coordinadores, simplemente arrastrándolos dentro o fuera de la tabla de coordinadores
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# Proyecto-Angular" 
-"# Proyecto-Angular" 
-"# AngularJavimr" 
+![image](https://user-images.githubusercontent.com/72435195/145893483-096eac1e-bfd4-4f59-bf42-1fda8dff018d.png)
+
+![image](https://user-images.githubusercontent.com/72435195/145893499-276554b6-228c-49ba-b39d-666590c0816a.png)
+
+Y se actualizará en la lista de usuario cambiando el icono dependiendo de a quien hayamos elegido como coordinador
+
+![image](https://user-images.githubusercontent.com/72435195/145893604-78704f59-0c3b-4e86-ac03-36fd41f98b89.png)
